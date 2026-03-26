@@ -23,6 +23,7 @@ def handler(event: dict, context) -> dict:
     phone = body.get('phone', '').strip()
     appliance = body.get('appliance', '').strip()
     problem = body.get('problem', '').strip()
+    address = body.get('address', '').strip()
 
     if not name or not phone:
         return {
@@ -39,6 +40,7 @@ def handler(event: dict, context) -> dict:
         f"👤 *Имя:* {name}\n"
         f"📞 *Телефон:* {phone}\n"
         f"🏠 *Техника:* {appliance or 'не указано'}\n"
+        f"📍 *Адрес:* {address or 'не указан'}\n"
         f"📝 *Проблема:* {problem or 'не описана'}"
     )
 

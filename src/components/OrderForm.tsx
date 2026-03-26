@@ -17,7 +17,7 @@ const APPLIANCES = [
 ];
 
 export default function OrderForm() {
-  const [form, setForm] = useState({ name: "", phone: "", appliance: "", problem: "" });
+  const [form, setForm] = useState({ name: "", phone: "", appliance: "", problem: "", address: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -100,6 +100,16 @@ export default function OrderForm() {
             <option key={a} value={a}>{a}</option>
           ))}
         </select>
+      </div>
+      <div className="space-y-1.5">
+        <Label htmlFor="address">Укажите адрес</Label>
+        <Input
+          id="address"
+          name="address"
+          placeholder="Улица, дом, квартира"
+          value={form.address}
+          onChange={handleChange}
+        />
       </div>
       <div className="space-y-1.5">
         <Label htmlFor="problem">Опишите проблему</Label>
