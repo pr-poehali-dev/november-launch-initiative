@@ -13,7 +13,7 @@ const Index = () => {
             <a href="#" className="hover:text-gray-900">
               Как работаем
             </a>
-            <a href="#" className="hover:text-gray-900">
+            <a href="#reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-gray-900">
               Отзывы
             </a>
             <a href="#" className="hover:text-gray-900">
@@ -105,7 +105,7 @@ const Index = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-16 px-6 text-center">
+      <section id="reviews" className="py-16 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <div className="w-16 h-16 rounded-full bg-gray-200 mx-auto mb-6 overflow-hidden">
             <img
