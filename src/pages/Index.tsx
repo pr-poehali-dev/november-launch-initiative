@@ -41,7 +41,7 @@ const Index = () => {
           <span className="bg-white text-black text-xs px-2 py-1 rounded-full mr-3">
             Быстро
           </span>
-          Мастер приедет в течение 2 часов.
+          Мастер приедет в течение 30 минут.
           <svg
             className="w-4 h-4 ml-2"
             fill="none"
