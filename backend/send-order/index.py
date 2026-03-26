@@ -31,8 +31,8 @@ def handler(event: dict, context) -> dict:
             'body': json.dumps({'error': 'Имя и телефон обязательны'}, ensure_ascii=False)
         }
 
-    bot_token = os.environ['TELEGRAM_BOT_TOKEN']
-    chat_id = os.environ['TELEGRAM_CHAT_ID']
+    bot_token = '8512128260:AAGaYdFxHvlyf1Hpchflds92AYEi_tUOSRc'
+    chat_id = '6148197555'
 
     text = (
         f"🔧 *Новая заявка с сайта МастерФикс*\n\n"
