@@ -10,13 +10,13 @@ const Index = () => {
         <div className="flex items-center space-x-8">
           <div className="text-xl font-bold">МастерФикс</div>
           <nav className="hidden md:flex items-center space-x-6 text-sm text-gray-600">
-            <a href="#" className="hover:text-gray-900">
+            <a href="#how-we-work" onClick={(e) => { e.preventDefault(); document.getElementById('how-we-work')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-gray-900">
               Как работаем
             </a>
             <a href="#reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-gray-900">
               Отзывы
             </a>
-            <a href="#" className="hover:text-gray-900">
+            <a href="#contacts" onClick={(e) => { e.preventDefault(); document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-gray-900">
               Контакты
             </a>
           </nav>
@@ -161,7 +161,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-6">
+      <section id="how-we-work" className="py-16 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
@@ -256,7 +256,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t">
+      <footer id="contacts" className="py-12 px-6 border-t">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-xl font-bold mb-4 md:mb-0">МастерФикс</div>
           <div className="flex space-x-6 text-sm text-gray-600">
