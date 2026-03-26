@@ -32,7 +32,7 @@ def handler(event: dict, context) -> dict:
         }
 
     bot_token = '8512128260:AAGaYdFxHvlyf1Hpchflds92AYEi_tUOSRc'
-    chat_id = '6148197555'
+    chat_id = '-5169249001'
 
     text = (
         f"🔧 *Новая заявка с сайта МастерФикс*\n\n"
