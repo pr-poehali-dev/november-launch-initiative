@@ -11,16 +11,7 @@ const Index = () => {
           <div className="text-xl font-bold">МастерФикс</div>
           <nav className="hidden md:flex items-center space-x-6 text-sm text-gray-600">
             <a href="#" className="hover:text-gray-900">
-              Услуги
-            </a>
-            <a href="#" className="hover:text-gray-900">
               Как работаем
-            </a>
-            <a href="#" className="hover:text-gray-900">
-              Техника
-            </a>
-            <a href="#" className="hover:text-gray-900">
-              Цены
             </a>
             <a href="#" className="hover:text-gray-900">
               Отзывы
