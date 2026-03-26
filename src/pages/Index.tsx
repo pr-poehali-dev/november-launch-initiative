@@ -30,7 +30,7 @@ const Index = () => {
             </a>
           </nav>
         </div>
-        <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-6">
+        <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-6" onClick={() => document.getElementById('order')?.scrollIntoView({ behavior: 'smooth' })}>
           Вызвать мастера
         </Button>
       </header>
@@ -72,7 +72,7 @@ const Index = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-3">
+          <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-3" onClick={() => document.getElementById('order')?.scrollIntoView({ behavior: 'smooth' })}>
             <Phone className="w-4 h-4 mr-2" />
             Оставить заявку
           </Button>
