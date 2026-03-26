@@ -1,3 +1,15 @@
-# november-launch-initiative
+# НотоПлан — приложение для заметок
 
-Initial repository setup for pr-poehali-dev/november-launch-initiative
+![Preview](https://cdn.poehali.dev/templates/app-landing-ru/preview-ru.jpg)
+
+Лендинг для мобильного приложения заметок и органайзера. Светлая чистая тема, показывающая интерфейс приложения. Отлично подойдёт для продвижения любого мобильного приложения — достаточно заменить скриншоты и тексты.
+
+Включает:
+- Hero-секция с mockup приложения
+- Описание функций
+- Социальное доказательство
+- CTA для скачивания
+
+```
+"tags": ["landing", "light", "general"]
+```
