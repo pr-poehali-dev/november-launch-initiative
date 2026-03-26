@@ -25,7 +25,7 @@ def handler(event: dict, context) -> dict:
     problem = body.get('problem', '').strip()
     address = body.get('address', '').strip()
 
-    if not name or not phone:
+    if not name or not phone or not address:
         return {
             'statusCode': 400,
             'headers': {'Access-Control-Allow-Origin': '*'},

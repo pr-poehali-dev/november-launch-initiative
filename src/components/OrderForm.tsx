@@ -35,7 +35,7 @@ export default function OrderForm() {
       });
       if (res.ok) {
         setStatus("success");
-        setForm({ name: "", phone: "", appliance: "", problem: "" });
+        setForm({ name: "", phone: "", appliance: "", problem: "", address: "" });
       } else {
         setStatus("error");
       }
@@ -102,13 +102,14 @@ export default function OrderForm() {
         </select>
       </div>
       <div className="space-y-1.5">
-        <Label htmlFor="address">Укажите адрес</Label>
+        <Label htmlFor="address">Укажите адрес <span className="text-red-500">*</span></Label>
         <Input
           id="address"
           name="address"
           placeholder="Улица, дом, квартира"
           value={form.address}
           onChange={handleChange}
+          required
         />
       </div>
       <div className="space-y-1.5">
