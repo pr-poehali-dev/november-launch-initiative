@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Star, Phone, Wrench, Clock, Shield } from "lucide-react";
+import OrderForm from "@/components/OrderForm";
 
 const Index = () => {
   return (
@@ -241,6 +242,24 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Order Form Section */}
+      <section className="py-16 px-6 bg-gray-50" id="order">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-sm text-gray-500 mb-2">Заявка</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              Вызвать мастера на дом
+            </h2>
+            <p className="text-gray-600">
+              Заполните форму — перезвоним в течение 15 минут и согласуем удобное время.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-sm p-8">
+            <OrderForm />
           </div>
         </div>
       </section>
