@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, Star } from "lucide-react";
+import { Check, Star, Phone, Wrench, Clock, Shield } from "lucide-react";
 
 const Index = () => {
   return (
@@ -7,41 +7,41 @@ const Index = () => {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <div className="flex items-center space-x-8">
-          <div className="text-xl font-bold">НотоПлан</div>
+          <div className="text-xl font-bold">МастерФикс</div>
           <nav className="hidden md:flex items-center space-x-6 text-sm text-gray-600">
             <a href="#" className="hover:text-gray-900">
-              Начать
+              Услуги
             </a>
             <a href="#" className="hover:text-gray-900">
-              Продукты
+              Как работаем
             </a>
             <a href="#" className="hover:text-gray-900">
-              Решения
-            </a>
-            <a href="#" className="hover:text-gray-900">
-              Сравнение
+              Техника
             </a>
             <a href="#" className="hover:text-gray-900">
               Цены
             </a>
             <a href="#" className="hover:text-gray-900">
-              Вопросы
+              Отзывы
+            </a>
+            <a href="#" className="hover:text-gray-900">
+              Контакты
             </a>
           </nav>
         </div>
         <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-6">
-          Тарифы
+          Вызвать мастера
         </Button>
       </header>
 
       {/* Hero Section */}
       <section className="text-center px-6 py-16 max-w-4xl mx-auto">
-        {/* New Badge */}
+        {/* Badge */}
         <div className="inline-flex items-center bg-black text-white text-sm px-4 py-2 rounded-full mb-8">
           <span className="bg-white text-black text-xs px-2 py-1 rounded-full mr-3">
-            Новинка
+            Быстро
           </span>
-          Ваши заметки станут великолепными.
+          Мастер приедет в течение 2 часов.
           <svg
             className="w-4 h-4 ml-2"
             fill="none"
@@ -58,22 +58,22 @@ const Index = () => {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 text-balance">
-          Приложение для заметок,
+          Ремонт бытовой техники
           <br />
-          работающее как{" "}
-          <span className="text-teal-500">Органайзер</span>
+          на дому — быстро и{" "}
+          <span className="text-teal-500">с гарантией</span>
         </h1>
 
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto text-pretty">
-          Отличные заметки заслуживают системы, которая делает все: от списков
-          дел для организованной жизни до запуска вашего стартапа быстрее
-          конкурентов.
+          Сломалась стиральная машина, холодильник или посудомойка? Наши мастера
+          диагностируют и починят любую технику прямо у вас дома — без лишних
+          хлопот.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-3">
-            <Star className="w-4 h-4 mr-2" />
-            Получить приглашение
+            <Phone className="w-4 h-4 mr-2" />
+            Оставить заявку
           </Button>
           <Button
             variant="outline"
@@ -89,25 +89,25 @@ const Index = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               />
             </svg>
-            Записаться на звонок
+            Получить консультацию
           </Button>
         </div>
       </section>
 
-      {/* Logo Section */}
+      {/* Trust Logos Section */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center space-x-12 opacity-60">
-            <div className="text-lg font-medium">Старт</div>
+            <div className="text-lg font-medium">Samsung</div>
             <div className="text-lg font-bold border-b-2 border-black pb-1">
-              Запуск
+              LG
             </div>
-            <div className="text-2xl font-bold">N</div>
-            <div className="text-lg font-bold">Итерация</div>
-            <div className="text-lg font-medium">Масштабирование</div>
+            <div className="text-2xl font-bold">Bosch</div>
+            <div className="text-lg font-bold">Indesit</div>
+            <div className="text-lg font-medium">Whirlpool</div>
           </div>
         </div>
       </section>
@@ -118,96 +118,84 @@ const Index = () => {
           <div className="w-16 h-16 rounded-full bg-gray-200 mx-auto mb-6 overflow-hidden">
             <img
               src="/professional-headshot.png"
-              alt="Отзыв"
+              alt="Отзыв клиента"
               className="w-full h-full object-cover"
             />
           </div>
           <h3 className="text-xl font-semibold mb-4">
-            Быстрая и простая настройка
+            Починили за один визит!
           </h3>
           <p className="text-gray-600 mb-2">
-            "Мы масштабировались до тысяч заметок ежедневно. Панель управления
-            приложения — единственное, что помогает нам оставаться в здравом
-            уме."
+            "Стиральная машина перестала отжимать вечером в пятницу. Уже на
+            следующий день мастер приехал, нашёл причину и всё исправил. Дал
+            гарантию на 6 месяцев."
           </p>
           <p className="text-sm text-gray-500">
-            Михаил из НотоПлан, официальный представитель
+            Ольга, клиент МастерФикс
           </p>
         </div>
       </section>
 
-      {/* Branding Section */}
+      {/* Services Section */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm text-gray-500 mb-4">Брендинг</p>
+          <p className="text-sm text-gray-500 mb-4">Наши услуги</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Настройте весь опыт под себя
+            Ремонтируем любую технику
           </h2>
           <p className="text-gray-600 mb-12">
-            От заметки до страницы и организованной жизни — сосредоточьтесь на
-            росте.
+            Опытные мастера с инструментом и запчастями — решим проблему за
+            один выезд.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Button variant="outline" className="rounded-full bg-transparent">
-              Магазин
+              Стиральные машины
             </Button>
             <Button variant="outline" className="rounded-full bg-transparent">
-              Оформление
+              Холодильники
             </Button>
             <Button className="bg-black text-white rounded-full">
-              Почта
+              Посудомойки
             </Button>
             <Button variant="outline" className="rounded-full bg-transparent">
-              Рассылка
+              Духовые шкафы
             </Button>
             <Button variant="outline" className="rounded-full bg-transparent">
-              Сканер
+              Кондиционеры
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Email Features Section */}
+      {/* Features Section */}
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
+              <Wrench className="w-6 h-6" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Письма, которые
+              Ремонт, который
               <br />
-              отражают вас
+              делается правильно
             </h2>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                <span>Добавьте ваш логотип и соцсети</span>
+                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <span>Диагностика бесплатно при выполнении ремонта</span>
               </div>
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                <span>Напишите собственное благодарственное сообщение</span>
+                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <span>Оригинальные запчасти от производителей</span>
               </div>
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                <span>Ваше имя, ваш email отправителя</span>
+                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <span>Гарантия на работу до 12 месяцев</span>
               </div>
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                <span>Интеграция с социальными сетями</span>
+                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <span>Работаем без выходных, с 8:00 до 22:00</span>
               </div>
             </div>
           </div>
@@ -215,29 +203,40 @@ const Index = () => {
             <div className="w-80 h-96 bg-gray-100 rounded-2xl p-4 shadow-lg">
               <div className="bg-white rounded-xl h-full p-4 flex flex-col">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="text-xs">9:19</div>
-                  <div className="flex space-x-1">
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
+                  <div className="text-xs font-medium text-gray-500">Заявка #1042</div>
+                  <div className="flex items-center space-x-1">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <span className="text-xs text-green-600">В работе</span>
                   </div>
                 </div>
-                <div className="text-sm font-medium mb-2">
-                  Ваш проект с Михаилом уже в приложении!
+                <div className="bg-gray-50 rounded-lg p-3 mb-3">
+                  <div className="text-sm font-bold mb-1">Стиральная машина LG</div>
+                  <div className="text-xs text-gray-500">Не сливает воду</div>
                 </div>
-                <div className="text-xs text-gray-500 mb-4">
-                  21 заметка в списке дел
-                </div>
-                <div className="bg-gray-50 rounded-lg p-3 flex-1">
-                  <div className="text-lg font-bold mb-2">организовано</div>
-                  <div className="text-sm mb-2">
-                    Ваш проект с Михаилом уже в приложении!
+                <div className="space-y-2 flex-1">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
+                      <Clock className="w-3 h-3 text-teal-600" />
+                    </div>
+                    <div className="text-xs text-gray-600">Мастер едет — 14:30</div>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-pink-200 rounded-full"></div>
-                    <div className="text-xs">
-                      Создайте первую заметку и организуйте
+                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                      <Shield className="w-3 h-3 text-green-600" />
                     </div>
+                    <div className="text-xs text-gray-600">Гарантия 6 месяцев</div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                      <Wrench className="w-3 h-3 text-blue-600" />
+                    </div>
+                    <div className="text-xs text-gray-600">Замена помпы — 1 900 ₽</div>
+                  </div>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-3 mt-auto">
+                  <div className="text-xs font-medium mb-1">Адрес выезда:</div>
+                  <div className="text-xs text-gray-500">
+                    ул. Ленина 42, кв. 18
                   </div>
                 </div>
               </div>
@@ -249,7 +248,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-6 border-t">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="text-xl font-bold mb-4 md:mb-0">НотоПлан</div>
+          <div className="text-xl font-bold mb-4 md:mb-0">МастерФикс</div>
           <div className="flex space-x-6 text-sm text-gray-600">
             <a href="#" className="hover:text-gray-900">
               Политика конфиденциальности
