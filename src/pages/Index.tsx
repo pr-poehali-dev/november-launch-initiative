@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Star, Phone, Wrench, Clock, Shield } from "lucide-react";
+import { Check, Star, Phone, Wrench, Clock, Shield, X, MapPin } from "lucide-react";
 import OrderForm from "@/components/OrderForm";
 
 const Index = () => {
+  const [showContacts, setShowContacts] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Top bar */}
@@ -271,12 +274,43 @@ const Index = () => {
             <a href="#" className="hover:text-gray-900">
               Условия использования
             </a>
-            <a href="#" className="hover:text-gray-900">
+            <button onClick={() => setShowContacts(true)} className="hover:text-gray-900">
               Контакты
-            </a>
+            </button>
           </div>
         </div>
       </footer>
+
+      {/* Contacts Modal */}
+      {showContacts && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4" onClick={() => setShowContacts(false)}>
+          <div className="bg-white rounded-2xl shadow-xl p-8 max-w-sm w-full relative" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowContacts(false)} className="absolute top-4 right-4 text-gray-400 hover:text-gray-700">
+              <X className="w-5 h-5" />
+            </button>
+            <h2 className="text-xl font-bold text-gray-900 mb-6">Контакты</h2>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 text-teal-500 mt-0.5 shrink-0" />
+                <div>
+                  <div className="text-sm text-gray-500 mb-0.5">Телефон</div>
+                  <a href="tel:+79933167884" className="text-lg font-semibold text-gray-900 hover:text-teal-500">
+                    +7 993 316-78-84
+                  </a>
+                  <div className="text-sm text-gray-500">Иван Владимирович</div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-teal-500 mt-0.5 shrink-0" />
+                <div>
+                  <div className="text-sm text-gray-500 mb-0.5">Адрес</div>
+                  <div className="text-gray-900 font-medium">г. Анапа, ул. Владимирская, 105</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
