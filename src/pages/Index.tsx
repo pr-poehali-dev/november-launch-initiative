@@ -46,10 +46,10 @@ const Index = () => {
       {/* QR floating left */}
       <a
         href="/qr"
-        className="hidden lg:flex fixed left-4 top-1/2 -translate-y-1/2 z-40 flex-col items-center bg-white border border-gray-200 rounded-2xl p-3 shadow-md hover:shadow-lg transition-shadow gap-2"
+        className="flex fixed left-2 top-1/2 -translate-y-1/2 z-40 flex-col items-center bg-white border border-gray-200 rounded-2xl p-2 shadow-md hover:shadow-lg transition-shadow gap-1.5"
         title="QR-код сайта"
       >
-        <QRCodeSVG value="https://masterfiksanapa-ru.ru/" size={72} />
+        <QRCodeSVG value="https://masterfiksanapa-ru.ru/" size={56} />
         <span className="text-xs text-gray-500 text-center leading-tight">QR сайта</span>
       </a>
 
