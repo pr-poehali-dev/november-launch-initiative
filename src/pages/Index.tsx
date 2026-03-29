@@ -5,6 +5,11 @@ import OrderForm from "@/components/OrderForm";
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      {/* Top bar */}
+      <div className="bg-teal-500 text-white text-center text-sm py-2 font-medium tracking-wide">
+        Мастер Фикс — Анапа и Анапский район
+      </div>
+
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <div className="flex items-center space-x-8">
