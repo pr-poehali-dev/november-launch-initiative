@@ -29,9 +29,15 @@ const Index = () => {
             </a>
           </nav>
         </div>
-        <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-6" onClick={() => document.getElementById('order')?.scrollIntoView({ behavior: 'smooth' })}>
-          Вызвать мастера
-        </Button>
+        <div className="flex items-center space-x-4">
+          <a href="tel:+79933167884" className="hidden md:flex items-center space-x-2 text-sm font-medium text-gray-700 hover:text-teal-500">
+            <Phone className="w-4 h-4" />
+            <span>+7 993 316-78-84</span>
+          </a>
+          <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-6" onClick={() => document.getElementById('order')?.scrollIntoView({ behavior: 'smooth' })}>
+            Вызвать мастера
+          </Button>
+        </div>
       </header>
 
       {/* Hero Section */}
