@@ -263,6 +263,9 @@ const Index = () => {
             <button onClick={() => setShowContacts(true)} className="hover:text-gray-900">
               Контакты
             </button>
+            <a href="/qr" className="hover:text-gray-900">
+              QR-код сайта
+            </a>
           </div>
         </div>
       </footer>
