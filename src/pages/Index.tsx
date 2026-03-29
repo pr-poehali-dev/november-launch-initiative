@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Star, Phone, Wrench, Clock, Shield, X, MapPin } from "lucide-react";
+import { Check, Phone, Wrench, Clock, Shield, X, MapPin } from "lucide-react";
 import OrderForm from "@/components/OrderForm";
+import Reviews from "@/components/Reviews";
 
 const Index = () => {
   const [showContacts, setShowContacts] = useState(false);
@@ -119,29 +120,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section id="reviews" className="py-16 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
-          <div className="w-16 h-16 rounded-full bg-gray-200 mx-auto mb-6 overflow-hidden">
-            <img
-              src="/professional-headshot.png"
-              alt="Отзыв клиента"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <h3 className="text-xl font-semibold mb-4">
-            Починили за один визит!
-          </h3>
-          <p className="text-gray-600 mb-2">
-            "Стиральная машина перестала отжимать вечером в пятницу. Уже на
-            следующий день мастер приехал, нашёл причину и всё исправил. Дал
-            гарантию на 6 месяцев."
-          </p>
-          <p className="text-sm text-gray-500">
-            Ольга, клиент МастерФикс
-          </p>
-        </div>
-      </section>
+      <Reviews />
 
       {/* Services Section */}
       <section className="py-16 px-6 bg-gray-50">
