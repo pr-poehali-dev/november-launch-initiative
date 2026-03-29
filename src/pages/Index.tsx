@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Wrench, Clock, Shield, X, MapPin } from "lucide-react";
+import { QRCodeSVG } from "qrcode.react";
 import OrderForm from "@/components/OrderForm";
 import Reviews from "@/components/Reviews";
 
@@ -41,6 +42,16 @@ const Index = () => {
           </Button>
         </div>
       </header>
+
+      {/* QR floating left */}
+      <a
+        href="/qr"
+        className="hidden lg:flex fixed left-4 top-1/2 -translate-y-1/2 z-40 flex-col items-center bg-white border border-gray-200 rounded-2xl p-3 shadow-md hover:shadow-lg transition-shadow gap-2"
+        title="QR-код сайта"
+      >
+        <QRCodeSVG value="https://masterfiksanapa-ru.ru/" size={72} />
+        <span className="text-xs text-gray-500 text-center leading-tight">QR сайта</span>
+      </a>
 
       {/* Hero Section */}
       <section className="text-center px-6 py-16 max-w-4xl mx-auto">
