@@ -12,7 +12,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Top bar */}
       <div className="bg-teal-500 text-white text-center text-sm py-2 font-medium tracking-wide">
-        Мастер Фикс — Анапа и Анапский район
+        МастерФикс — Анапа и Анапский район
       </div>
 
       {/* Header */}
